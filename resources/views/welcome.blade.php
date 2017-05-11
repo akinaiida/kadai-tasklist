@@ -3,7 +3,7 @@
 @section('content')
     @if (Auth::check())
         <?php $user = Auth::user(); ?>
-        {{ $user->name }}
+<!--        {!! link_to_route('tasks.index', 'Tasks') !!} -->
     @else
         <div class="center jumbotron">
             <div class="text-center">
